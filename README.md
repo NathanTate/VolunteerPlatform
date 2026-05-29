@@ -4,6 +4,32 @@ A full-stack volunteer coordination platform built for Ukrainian civil organisat
 
 ---
 
+## Demo Accounts
+
+The database is seeded automatically on first run with realistic data. Use these accounts to explore each role:
+
+| Role | Email | Password |
+|---|---|---|
+| **SuperAdmin** | admin@volunteer.ua | Volunteer123! |
+| **OrganizationAdmin** (Допомога Разом) | org1@volunteer.ua | Volunteer123! |
+| **OrganizationAdmin** (Захисники України) | org2@volunteer.ua | Volunteer123! |
+| **Coordinator** | coord1@volunteer.ua | Volunteer123! |
+| **Coordinator** | coord2@volunteer.ua | Volunteer123! |
+| **Volunteer** | vol1@volunteer.ua | Volunteer123! |
+| **Volunteer** | vol2@volunteer.ua | Volunteer123! |
+
+### What gets seeded
+
+- **10 initiatives** across Kyiv, Lviv, Kharkiv and Odesa — Active, Planned, and Completed; including 2 emergency ones
+- **20+ tasks** spread across initiatives, with statuses ranging from Pending → InProgress → Completed → Verified
+- **16 application requests** from volunteers to initiatives (all Approved)
+- **Notifications** including a system broadcast and per-user application confirmations
+- All users are pre-confirmed/approved so you can log in and explore immediately
+
+The seeder is idempotent — re-running the app never duplicates data.
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
