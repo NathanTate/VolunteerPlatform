@@ -1,0 +1,18 @@
+namespace VolunteerPlatform.Domain.Entities;
+
+public class TaskAttachment
+{
+    public Guid Id { get; set; }
+    public Guid TaskId { get; set; }
+    public VolunteerTask Task { get; set; } = null!;
+
+    public string FileName { get; set; } = string.Empty;
+    public string Url { get; set; } = string.Empty;
+    public string ContentType { get; set; } = string.Empty;
+    public long FileSizeBytes { get; set; }
+
+    public string UploadedById { get; set; } = string.Empty;
+    public User UploadedBy { get; set; } = null!;
+
+    public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
+}

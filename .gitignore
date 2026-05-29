@@ -1,0 +1,42 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.log
+*.nupkg
+*.snupkg
+TestResults/
+.TestResults/
+
+# ASP.NET
+appsettings.Development.json
+
+# Node / Angular
+node_modules/
+dist/
+.angular/
+npm-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Angular environment files with real secrets (keep .example templates)
+volunteer-platform-ui/src/environments/environment.ts
+volunteer-platform-ui/src/environments/environment.prod.ts
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JetBrains / VS Code
+.idea/
+.vscode/
+*.swp
+
+# Docker override
+docker-compose.override.yml
